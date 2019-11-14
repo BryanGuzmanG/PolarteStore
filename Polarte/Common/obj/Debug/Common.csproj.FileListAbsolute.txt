@@ -1,0 +1,6 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\bin\Debug\Common.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\bin\Debug\Common.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.pdb

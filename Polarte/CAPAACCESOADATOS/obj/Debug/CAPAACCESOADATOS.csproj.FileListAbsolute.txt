@@ -1,0 +1,9 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\CAPAACCESOADATOS.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\CAPAACCESOADATOS.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csprojAssemblyReference.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csproj.CoreCompileInputs.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csproj.CopyComplete

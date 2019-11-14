@@ -1,0 +1,11 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\CAPADOMINIO.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\CAPADOMINIO.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\CAPAACCESOADATOS.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\CAPAACCESOADATOS.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Debug\CAPADOMINIO.csprojAssemblyReference.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Debug\CAPADOMINIO.csproj.CoreCompileInputs.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Debug\CAPADOMINIO.csproj.CopyComplete
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Debug\CAPADOMINIO.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Debug\CAPADOMINIO.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\Common.dll
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\bin\Debug\Common.pdb

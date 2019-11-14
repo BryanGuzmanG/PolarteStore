@@ -568,4 +568,17 @@
         yAsAeQEgLwDkBYC8AJAXAOrgBkKEqYXQuINDAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="lblErrorMessage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7pAAAO6QEOM0IcAAAAB3RJ
+        TUUH4wsOEx4G6EkCbQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFMSURBVDhP
+        pZJLS8NAEMf3on4XHx/Eg24EexLdiJCD4M2berYHLRVLBb+Kr5M3D0oSEDy0qR4CPdkGemibcWa6rOum
+        hooDv7D5zyOZnRGuvUt/pSXVRVuqCMk0Ucvz652N7WUdVrS31YOF9rpqYvAYgV8YIY24UpnXaRPjZKnu
+        rcByvJ27H0USqa6mBpbhqUtOpp5RML+dnlRh8BJDZ2vfBNOZtPS4+l0A20nW1JLQF2YcH8EhjPsZDKJX
+        SDb3GDqTRj47FqkJfMSOCOnRKeTDIWQPjwydSXPjkJAK9B2R6Z41AfKc6davC35Njwr0HJGZscDn/1ug
+        DbPFP12i558LWk98oQ1jkcf4HBXHiFphjHJ3kXcBXxqWYyZo/JxMRmuJ4q0bVMLNUxDM6fSJcRFcT3Sa
+        dqYwoi8Xkm2j9cTAGhIitCNESBdmejYmxBdE1kZwk8zicAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

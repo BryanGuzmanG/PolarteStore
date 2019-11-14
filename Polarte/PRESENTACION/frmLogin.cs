@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CAPADOMINIO;
+using Common.Cache;
 
 namespace PRESENTACION
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -63,6 +65,39 @@ namespace PRESENTACION
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnAcceder_Click(object sender, EventArgs e)
+        {
+            if (txtUser.Text != "USERNAME" && txtUser.TextLength > 2)
+            {
+                if (txtPass.Text != "PASSWORD")
+                {
+                    UserModel user = new UserModel();
+                    var validarLogin = user.LoginUser(txtUser.Text, txtPass.Text);
+                    if (validarLogin == true)
+                    {
+                        PantallaPrincipal mainMenu = new PantallaPrincipal();
+                        mainMenu.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Incorrect username or password entered.");
+                        txtPass.Text = "PASSWORD";
+                        txtPass.UseSystemPasswordChar = false;
+                        txtPass.Focus();
+                    }
+                }
+                else msgError("Please enter password.");
+            }
+            else msgError("Please enter username.");
+        }
+
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = "     "  + msg;
+            lblErrorMessage.Visible = true;
         }
     }
 }
