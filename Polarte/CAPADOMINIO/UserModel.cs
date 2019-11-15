@@ -33,7 +33,7 @@ namespace CAPADOMINIO
 
         public UserModel() { }
         //Methods
-        public string editUserProfile()
+        public string EditProfile()
         {
             try
             {

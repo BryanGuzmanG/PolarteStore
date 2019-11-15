@@ -100,7 +100,7 @@ namespace PRESENTACION
                             apellidos: txtLastName.Text,
                             rol: null,
                             email: txtUserEmail.Text);
-                        var result = userModel.editUserProfile();
+                        var result = userModel.EditProfile();
                         MessageBox.Show(result);
                         reset();
                         panelEdit.Visible = false;
