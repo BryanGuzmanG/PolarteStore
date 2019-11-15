@@ -47,3 +47,26 @@ C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\Common.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPAACCESOADATOS.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmLogin.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmUserProfile.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\PRESENTACION.exe.config
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\PRESENTACION.exe
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\PRESENTACION.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPADOMINIO.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\Common.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPAACCESOADATOS.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPADOMINIO.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\Common.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPAACCESOADATOS.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csprojAssemblyReference.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmEmpleados.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmLogin.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProducto.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProveedores.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmUserProfile.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmVentas.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.PantallaPrincipal.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.Properties.Resources.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csproj.GenerateResource.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.exe
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.pdb

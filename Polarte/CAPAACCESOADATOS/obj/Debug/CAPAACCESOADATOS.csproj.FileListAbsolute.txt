@@ -7,3 +7,12 @@ C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCE
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.dll
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csproj.CopyComplete
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\CAPAACCESOADATOS.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\CAPAACCESOADATOS.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\bin\Debug\Common.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csprojAssemblyReference.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csproj.CoreCompileInputs.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.csproj.CopyComplete
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Debug\CAPAACCESOADATOS.pdb
