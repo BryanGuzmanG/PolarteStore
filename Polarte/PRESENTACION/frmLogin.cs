@@ -59,7 +59,9 @@ namespace PRESENTACION
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are you sure you want to close de app?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Application.Exit();          
         }
 
         private void BtnMinimizar_Click(object sender, EventArgs e)
@@ -79,6 +81,7 @@ namespace PRESENTACION
                     {
                         PantallaPrincipal mainMenu = new PantallaPrincipal();
                         mainMenu.Show();
+                        mainMenu.FormClosed += Logout;
                         this.Hide();
                     }
                     else
@@ -98,6 +101,15 @@ namespace PRESENTACION
         {
             lblErrorMessage.Text = "     "  + msg;
             lblErrorMessage.Visible = true;
+        }
+
+        private void Logout (object sender, FormClosedEventArgs e)
+        {
+            txtUser.Text = "USERNAME";
+            txtPass.Text = "PASSWORD";
+            txtPass.UseSystemPasswordChar = false;
+            lblErrorMessage.Visible = false;
+            this.Show();
         }
     }
 }

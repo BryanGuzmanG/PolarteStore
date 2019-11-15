@@ -46,3 +46,4 @@ C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPAACCESOAD
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\Common.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\CAPAACCESOADATOS.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmLogin.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmUserProfile.resources

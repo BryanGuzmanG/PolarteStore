@@ -49,6 +49,10 @@
       <Project>{c24b0243-1348-4e3e-a021-c27698ec8e2e}</Project>
       <Name>CAPAACCESOADATOS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{78bfab1a-1b98-498b-8e13-b368314db7b6}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,6 +18,8 @@ namespace PRESENTACION
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
             //Application.Run(new PantallaPrincipal());
+
+            
         }
     }
 }

@@ -37,9 +37,14 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -53,11 +58,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.tbnCerrar = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.linkProfile = new System.Windows.Forms.LinkLabel();
             this.panelPrincipal.SuspendLayout();
             this.panelFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,7 +81,7 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(975, 563);
+            this.panelPrincipal.Size = new System.Drawing.Size(1105, 563);
             this.panelPrincipal.TabIndex = 0;
             // 
             // panelFormularios
@@ -94,7 +95,7 @@
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularios.Location = new System.Drawing.Point(225, 40);
             this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(750, 523);
+            this.panelFormularios.Size = new System.Drawing.Size(880, 523);
             this.panelFormularios.TabIndex = 2;
             // 
             // label1
@@ -103,7 +104,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
-            this.label1.Location = new System.Drawing.Point(292, 340);
+            this.label1.Location = new System.Drawing.Point(422, 340);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 54);
             this.label1.TabIndex = 4;
@@ -112,7 +113,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(250, 92);
+            this.pictureBox2.Location = new System.Drawing.Point(372, 92);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 266);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +126,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblFecha.Location = new System.Drawing.Point(409, 488);
+            this.lblFecha.Location = new System.Drawing.Point(530, 488);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(248, 25);
             this.lblFecha.TabIndex = 1;
@@ -137,7 +138,7 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblHora.Location = new System.Drawing.Point(530, 434);
+            this.lblHora.Location = new System.Drawing.Point(651, 434);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(125, 54);
             this.lblHora.TabIndex = 0;
@@ -164,38 +165,79 @@
             this.panel2.Size = new System.Drawing.Size(225, 523);
             this.panel2.TabIndex = 1;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
+            this.panel8.Location = new System.Drawing.Point(1, 383);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(5, 37);
+            this.panel8.TabIndex = 6;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
+            this.panel7.Location = new System.Drawing.Point(1, 317);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 37);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
+            this.panel6.Location = new System.Drawing.Point(1, 258);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 37);
+            this.panel6.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
+            this.panel5.Location = new System.Drawing.Point(1, 198);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 37);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
+            this.panel4.Location = new System.Drawing.Point(1, 139);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 37);
+            this.panel4.TabIndex = 5;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(60)))));
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.linkProfile);
+            this.panel3.Controls.Add(this.lblRol);
+            this.panel3.Controls.Add(this.lblName);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Location = new System.Drawing.Point(0, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 77);
+            this.panel3.Size = new System.Drawing.Size(225, 89);
             this.panel3.TabIndex = 5;
             // 
-            // label3
+            // lblRol
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(58, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Puesto";
+            this.lblRol.AutoSize = true;
+            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblRol.Location = new System.Drawing.Point(58, 38);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(50, 16);
+            this.lblRol.TabIndex = 7;
+            this.lblRol.Text = "Puesto";
             // 
-            // label2
+            // lblName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(58, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "NOMBRE ";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblName.Location = new System.Drawing.Point(58, 22);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(77, 16);
+            this.lblName.TabIndex = 6;
+            this.lblName.Text = "NOMBRE ";
             // 
             // pictureBox3
             // 
@@ -225,6 +267,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // btnReportes
             // 
@@ -325,7 +368,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(975, 40);
+            this.panel1.Size = new System.Drawing.Size(1105, 40);
             this.panel1.TabIndex = 0;
             // 
             // btnRestaurar
@@ -333,7 +376,7 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(906, 3);
+            this.btnRestaurar.Location = new System.Drawing.Point(1036, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(30, 26);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -346,7 +389,7 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(906, 3);
+            this.btnMaximizar.Location = new System.Drawing.Point(1036, 3);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(30, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -359,7 +402,7 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(870, 3);
+            this.btnMinimizar.Location = new System.Drawing.Point(1000, 3);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(30, 26);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -372,7 +415,7 @@
             this.tbnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tbnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("tbnCerrar.Image")));
-            this.tbnCerrar.Location = new System.Drawing.Point(942, 3);
+            this.tbnCerrar.Location = new System.Drawing.Point(1072, 3);
             this.tbnCerrar.Name = "tbnCerrar";
             this.tbnCerrar.Size = new System.Drawing.Size(30, 26);
             this.tbnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -385,56 +428,28 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // panel4
+            // linkProfile
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
-            this.panel4.Location = new System.Drawing.Point(1, 139);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 37);
-            this.panel4.TabIndex = 5;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
-            this.panel5.Location = new System.Drawing.Point(1, 198);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 37);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
-            this.panel6.Location = new System.Drawing.Point(1, 258);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 37);
-            this.panel6.TabIndex = 8;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
-            this.panel7.Location = new System.Drawing.Point(1, 317);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 37);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(97)))), ((int)(((byte)(150)))));
-            this.panel8.Location = new System.Drawing.Point(1, 383);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(5, 37);
-            this.panel8.TabIndex = 6;
+            this.linkProfile.AutoSize = true;
+            this.linkProfile.Location = new System.Drawing.Point(8, 63);
+            this.linkProfile.Name = "linkProfile";
+            this.linkProfile.Size = new System.Drawing.Size(53, 13);
+            this.linkProfile.TabIndex = 8;
+            this.linkProfile.TabStop = true;
+            this.linkProfile.Text = "My Profile";
+            this.linkProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkProfile_LinkClicked);
             // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 563);
+            this.ClientSize = new System.Drawing.Size(1105, 563);
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PantallaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaPrincipal";
+            this.Load += new System.EventHandler(this.PantallaPrincipal_Load);
             this.panelPrincipal.ResumeLayout(false);
             this.panelFormularios.ResumeLayout(false);
             this.panelFormularios.PerformLayout();
@@ -475,13 +490,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.LinkLabel linkProfile;
     }
 }

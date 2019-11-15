@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CAPADOMINIO;
+using Common.Cache;
 
 namespace PRESENTACION
 {
@@ -16,11 +18,14 @@ namespace PRESENTACION
         {
             InitializeComponent();
             btnRestaurar.Visible = false;
+            Permisos();
         }
 
         private void TbnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are you sure you want to close the app?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Application.Exit();
         }
 
         //Capturar posicion y tamano antes de maximizar  para restaurar
@@ -84,29 +89,53 @@ namespace PRESENTACION
             this.Location = new Point(lx, ly);
         }
 
-       /* private void AbrirFormulario<MiForm>() where MiForm : Form , new()
+        private void BtnLogOut_Click(object sender, EventArgs e)
         {
-            Form formulario;
-            formulario = panelFormularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario; Si el formulario
+            if (MessageBox.Show("Are you sure you want to log out of the  app?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+        }
 
-            // Entonces si el formulario o la instancia no existe;
-            if(formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                panelFormularios.Controls.Add(formulario);
-                panelFormularios.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            else //Si el formulario o la instancia existen 
-            {
-                formulario.BringToFront();
-            }
+        
+        private void PantallaPrincipal_Load(object sender, EventArgs e)
+        {
+            LoadUserData();
+        }
+        
+        private void LoadUserData()
+        {
+            lblName.Text = UserCache.Nombre + " " + UserCache.Apellidos;
+            lblRol.Text = UserCache.Rol;
+        }
 
-        }*/
+        private void LinkProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AbrirFormularioEnPanel(new frmUserProfile());
+        }
+
+        /* private void AbrirFormulario<MiForm>() where MiForm : Form , new()
+         {
+             Form formulario;
+             formulario = panelFormularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario; Si el formulario
+
+             // Entonces si el formulario o la instancia no existe;
+             if(formulario == null)
+             {
+                 formulario = new MiForm();
+                 formulario.TopLevel = false;
+                 formulario.FormBorderStyle = FormBorderStyle.None;
+                 formulario.Dock = DockStyle.Fill;
+                 panelFormularios.Controls.Add(formulario);
+                 panelFormularios.Tag = formulario;
+                 formulario.Show();
+                 formulario.BringToFront();
+             }
+             else //Si el formulario o la instancia existen 
+             {
+                 formulario.BringToFront();
+             }
+
+         }*/
 
         private void AbrirFormularioEnPanel(object formHijo)
         {
@@ -120,6 +149,17 @@ namespace PRESENTACION
             fh.Show();
             fh.BringToFront();
 
+        }
+
+        //Manejando los permisos 
+        public void Permisos()
+        {
+            if (UserCache.Rol != Roles.Administrador || UserCache.Rol != Roles.Gerente)
+            {
+                btnEmpleados.Enabled = false;
+                btnReportes.Enabled = false;
+
+            }
         }
     }
 }
