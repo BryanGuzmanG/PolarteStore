@@ -11,7 +11,7 @@ namespace CAPADOMINIO
     {
         UserDao userDao = new UserDao();
 
-        //Attributes
+        //Attributes - Relacion BDA
         private int UserID;
         private string UserName;
         private string Password;
