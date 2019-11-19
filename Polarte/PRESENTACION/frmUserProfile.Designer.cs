@@ -32,6 +32,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelEdit = new System.Windows.Forms.Panel();
+            this.LinkEditPass = new System.Windows.Forms.LinkLabel();
+            this.btnSaver = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtCurrentPass = new System.Windows.Forms.TextBox();
+            this.txtUserCFPass = new System.Windows.Forms.TextBox();
+            this.txtUserPass = new System.Windows.Forms.TextBox();
+            this.txtUserEmail = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -44,24 +62,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkEditProfile = new System.Windows.Forms.LinkLabel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtFirstname = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtUserEmail = new System.Windows.Forms.TextBox();
-            this.txtUserPass = new System.Windows.Forms.TextBox();
-            this.txtUserCFPass = new System.Windows.Forms.TextBox();
-            this.txtCurrentPass = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSaver = new System.Windows.Forms.Button();
-            this.LinkEditPass = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -110,11 +110,197 @@
             this.panelEdit.Controls.Add(this.label17);
             this.panelEdit.Controls.Add(this.label15);
             this.panelEdit.Controls.Add(this.label16);
-            this.panelEdit.Location = new System.Drawing.Point(468, -4);
+            this.panelEdit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelEdit.Location = new System.Drawing.Point(491, 0);
             this.panelEdit.Name = "panelEdit";
-            this.panelEdit.Size = new System.Drawing.Size(419, 544);
+            this.panelEdit.Size = new System.Drawing.Size(393, 532);
             this.panelEdit.TabIndex = 2;
             this.panelEdit.Visible = false;
+            // 
+            // LinkEditPass
+            // 
+            this.LinkEditPass.AutoSize = true;
+            this.LinkEditPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkEditPass.Location = new System.Drawing.Point(114, 283);
+            this.LinkEditPass.Name = "LinkEditPass";
+            this.LinkEditPass.Size = new System.Drawing.Size(33, 18);
+            this.LinkEditPass.TabIndex = 15;
+            this.LinkEditPass.TabStop = true;
+            this.LinkEditPass.Text = "Edit";
+            this.LinkEditPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkEditPass_LinkClicked);
+            // 
+            // btnSaver
+            // 
+            this.btnSaver.BackColor = System.Drawing.Color.Blue;
+            this.btnSaver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSaver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaver.ForeColor = System.Drawing.Color.White;
+            this.btnSaver.Location = new System.Drawing.Point(211, 466);
+            this.btnSaver.Name = "btnSaver";
+            this.btnSaver.Size = new System.Drawing.Size(103, 32);
+            this.btnSaver.TabIndex = 30;
+            this.btnSaver.Text = "Save";
+            this.btnSaver.UseVisualStyleBackColor = false;
+            this.btnSaver.Click += new System.EventHandler(this.BtnSaver_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Gray;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(63, 466);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(109, 32);
+            this.btnCancel.TabIndex = 29;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // txtCurrentPass
+            // 
+            this.txtCurrentPass.Location = new System.Drawing.Point(25, 414);
+            this.txtCurrentPass.Name = "txtCurrentPass";
+            this.txtCurrentPass.Size = new System.Drawing.Size(357, 20);
+            this.txtCurrentPass.TabIndex = 28;
+            // 
+            // txtUserCFPass
+            // 
+            this.txtUserCFPass.Location = new System.Drawing.Point(25, 360);
+            this.txtUserCFPass.Name = "txtUserCFPass";
+            this.txtUserCFPass.Size = new System.Drawing.Size(357, 20);
+            this.txtUserCFPass.TabIndex = 27;
+            // 
+            // txtUserPass
+            // 
+            this.txtUserPass.Location = new System.Drawing.Point(25, 304);
+            this.txtUserPass.Name = "txtUserPass";
+            this.txtUserPass.Size = new System.Drawing.Size(357, 20);
+            this.txtUserPass.TabIndex = 26;
+            // 
+            // txtUserEmail
+            // 
+            this.txtUserEmail.Location = new System.Drawing.Point(27, 249);
+            this.txtUserEmail.Name = "txtUserEmail";
+            this.txtUserEmail.Size = new System.Drawing.Size(357, 20);
+            this.txtUserEmail.TabIndex = 25;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(27, 194);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(357, 20);
+            this.txtLastName.TabIndex = 24;
+            // 
+            // txtFirstname
+            // 
+            this.txtFirstname.Location = new System.Drawing.Point(25, 139);
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.Size = new System.Drawing.Size(357, 20);
+            this.txtFirstname.TabIndex = 23;
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(25, 87);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(357, 20);
+            this.txtUserName.TabIndex = 22;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(22, 395);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(125, 16);
+            this.label19.TabIndex = 21;
+            this.label19.Text = "CurrentPassword";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(22, 341);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(132, 16);
+            this.label18.TabIndex = 20;
+            this.label18.Text = "Confirm Password";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(24, 285);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Password";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(3, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(169, 33);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Information ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(24, 230);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 16);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Email";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(22, 68);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(79, 16);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Username";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(24, 175);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 16);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "Apellidos";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(22, 123);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 16);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Nombre";
             // 
             // lblUser
             // 
@@ -156,11 +342,11 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.DimGray;
             this.lblEmail.Location = new System.Drawing.Point(264, 274);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 20);
+            this.lblEmail.Size = new System.Drawing.Size(44, 15);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
             // 
@@ -257,191 +443,6 @@
             this.linkEditProfile.TabStop = true;
             this.linkEditProfile.Text = "Edit Profile";
             this.linkEditProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkEditProfile_LinkClicked);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(3, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(169, 33);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Information ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(24, 285);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Password";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(24, 230);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 16);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Email";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(24, 175);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 16);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "Apellidos";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(22, 123);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 16);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Nombre";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(22, 68);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 16);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "Username";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(22, 341);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 16);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "Confirm Password";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(22, 395);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(125, 16);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "CurrentPassword";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(25, 87);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(357, 20);
-            this.txtUserName.TabIndex = 22;
-            // 
-            // txtFirstname
-            // 
-            this.txtFirstname.Location = new System.Drawing.Point(25, 139);
-            this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(357, 20);
-            this.txtFirstname.TabIndex = 23;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(27, 194);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(357, 20);
-            this.txtLastName.TabIndex = 24;
-            // 
-            // txtUserEmail
-            // 
-            this.txtUserEmail.Location = new System.Drawing.Point(27, 249);
-            this.txtUserEmail.Name = "txtUserEmail";
-            this.txtUserEmail.Size = new System.Drawing.Size(357, 20);
-            this.txtUserEmail.TabIndex = 25;
-            // 
-            // txtUserPass
-            // 
-            this.txtUserPass.Location = new System.Drawing.Point(25, 304);
-            this.txtUserPass.Name = "txtUserPass";
-            this.txtUserPass.Size = new System.Drawing.Size(357, 20);
-            this.txtUserPass.TabIndex = 26;
-            // 
-            // txtUserCFPass
-            // 
-            this.txtUserCFPass.Location = new System.Drawing.Point(25, 360);
-            this.txtUserCFPass.Name = "txtUserCFPass";
-            this.txtUserCFPass.Size = new System.Drawing.Size(357, 20);
-            this.txtUserCFPass.TabIndex = 27;
-            // 
-            // txtCurrentPass
-            // 
-            this.txtCurrentPass.Location = new System.Drawing.Point(25, 414);
-            this.txtCurrentPass.Name = "txtCurrentPass";
-            this.txtCurrentPass.Size = new System.Drawing.Size(357, 20);
-            this.txtCurrentPass.TabIndex = 28;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gray;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(63, 466);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(109, 32);
-            this.btnCancel.TabIndex = 29;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
-            // 
-            // btnSaver
-            // 
-            this.btnSaver.BackColor = System.Drawing.Color.Blue;
-            this.btnSaver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSaver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaver.ForeColor = System.Drawing.Color.White;
-            this.btnSaver.Location = new System.Drawing.Point(211, 466);
-            this.btnSaver.Name = "btnSaver";
-            this.btnSaver.Size = new System.Drawing.Size(103, 32);
-            this.btnSaver.TabIndex = 30;
-            this.btnSaver.Text = "Save";
-            this.btnSaver.UseVisualStyleBackColor = false;
-            this.btnSaver.Click += new System.EventHandler(this.BtnSaver_Click);
-            // 
-            // LinkEditPass
-            // 
-            this.LinkEditPass.AutoSize = true;
-            this.LinkEditPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkEditPass.Location = new System.Drawing.Point(114, 283);
-            this.LinkEditPass.Name = "LinkEditPass";
-            this.LinkEditPass.Size = new System.Drawing.Size(33, 18);
-            this.LinkEditPass.TabIndex = 15;
-            this.LinkEditPass.TabStop = true;
-            this.LinkEditPass.Text = "Edit";
-            this.LinkEditPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkEditPass_LinkClicked);
             // 
             // frmUserProfile
             // 

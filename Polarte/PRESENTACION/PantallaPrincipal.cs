@@ -62,6 +62,7 @@ namespace PRESENTACION
         private void BtnProducto_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new frmProducto());
+            
         }
 
         private void BtnVentas_Click(object sender, EventArgs e)
@@ -111,6 +112,7 @@ namespace PRESENTACION
         private void LinkProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AbrirFormularioEnPanel(new frmUserProfile());
+            //AbrirFormularioEnPanel<frmUserProfile>();
         }
 
         /* private void AbrirFormulario<MiForm>() where MiForm : Form , new()
@@ -154,12 +156,18 @@ namespace PRESENTACION
         //Manejando los permisos 
         public void Permisos()
         {
-            if (UserCache.Rol != Roles.Administrador || UserCache.Rol != Roles.Gerente)
+            if (UserCache.Rol == Roles.Administrador || UserCache.Rol == Roles.Gerente)
+            {
+                btnEmpleados.Enabled = true;
+                btnReportes.Enabled = true;
+
+
+            }else if(UserCache.Rol == Roles.Vendedor)
             {
                 btnEmpleados.Enabled = false;
                 btnReportes.Enabled = false;
-
             }
+            
         }
     }
 }
