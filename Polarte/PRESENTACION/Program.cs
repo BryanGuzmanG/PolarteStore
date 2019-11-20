@@ -21,7 +21,6 @@ namespace PRESENTACION
             //Application.Run(new PantallaPrincipal());
             //Application.Run(new frmProducto());
 
-            /* ESTO ES SOLAMENTE UNA PRUEBA DE NADA EN CONCRETO!*/
 
             
         }
