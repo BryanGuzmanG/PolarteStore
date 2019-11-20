@@ -1,0 +1,2 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Release\CAPAACCESOADATOS.csprojAssemblyReference.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPAACCESOADATOS\obj\Release\CAPAACCESOADATOS.csproj.CoreCompileInputs.cache

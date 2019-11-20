@@ -51,5 +51,10 @@ namespace CAPADOMINIO
 
         }
 
+        public void EliminarProduct(string id)
+        {
+            objProct.EliminarProd(Convert.ToInt32(id));
+        }
+
     }
 }

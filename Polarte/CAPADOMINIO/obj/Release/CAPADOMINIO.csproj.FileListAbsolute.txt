@@ -1,0 +1,1 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\CAPADOMINIO\obj\Release\CAPADOMINIO.csproj.CoreCompileInputs.cache

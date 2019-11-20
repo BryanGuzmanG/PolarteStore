@@ -118,14 +118,21 @@ namespace CAPAACCESOADATOS
             }
         }
 
-        public void Eliminar(int id)
+        public void EliminarProd(int id)
         {
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand)
+                using (var command = new SqlCommand())
                 {
+                    // delete from Productos where Id = @idpro
+                    command.Connection = connection;
+                    command.CommandText = "Delete from Productos where ProductoID = @idpro";
+                    command.CommandType = CommandType.Text;
+                    command.Parameters.AddWithValue("@idpro", id);
 
+                    command.ExecuteNonQuery();
+                    command.Parameters.Clear();
                 }
             }
         }

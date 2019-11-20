@@ -102,5 +102,19 @@ namespace PRESENTACION
             txtPrecio.Text = "";
             txtStock.Text = "";
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewProducto.SelectedRows.Count > 0)
+            {
+                idPro = dataGridViewProducto.CurrentRow.Cells[0].Value.ToString();
+                objPro.EliminarProduct(idPro);
+
+                MessageBox.Show("Eliminado correctamente");
+                MostrarProducto();
+            }else
+                MessageBox.Show("seleccione una fila por favor");
+
+        }
     }
 }

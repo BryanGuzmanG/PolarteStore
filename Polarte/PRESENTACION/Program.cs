@@ -20,6 +20,7 @@ namespace PRESENTACION
               Application.Run(new frmLogin());
             //Application.Run(new PantallaPrincipal());
             //Application.Run(new frmProducto());  
+            //Application.Run(new frmProducto());
         }
     }
 }

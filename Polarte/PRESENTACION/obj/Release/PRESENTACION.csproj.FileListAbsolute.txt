@@ -1,0 +1,11 @@
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.csprojAssemblyReference.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmEmpleados.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmLogin.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmProducto.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmProveedores.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmUserProfile.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.frmVentas.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.PantallaPrincipal.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.Properties.Resources.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.csproj.GenerateResource.cache
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Release\PRESENTACION.csproj.CoreCompileInputs.cache
