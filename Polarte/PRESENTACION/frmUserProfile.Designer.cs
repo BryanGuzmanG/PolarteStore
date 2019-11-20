@@ -121,6 +121,7 @@
             // 
             this.LinkEditPass.AutoSize = true;
             this.LinkEditPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkEditPass.LinkColor = System.Drawing.Color.Yellow;
             this.LinkEditPass.Location = new System.Drawing.Point(114, 283);
             this.LinkEditPass.Name = "LinkEditPass";
             this.LinkEditPass.Size = new System.Drawing.Size(33, 18);

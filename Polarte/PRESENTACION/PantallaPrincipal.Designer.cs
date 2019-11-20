@@ -43,6 +43,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.linkProfile = new System.Windows.Forms.LinkLabel();
             this.lblRol = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,7 +59,6 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.tbnCerrar = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.linkProfile = new System.Windows.Forms.LinkLabel();
             this.panelPrincipal.SuspendLayout();
             this.panelFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -216,6 +216,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(225, 89);
             this.panel3.TabIndex = 5;
+            // 
+            // linkProfile
+            // 
+            this.linkProfile.AutoSize = true;
+            this.linkProfile.LinkColor = System.Drawing.Color.Yellow;
+            this.linkProfile.Location = new System.Drawing.Point(8, 63);
+            this.linkProfile.Name = "linkProfile";
+            this.linkProfile.Size = new System.Drawing.Size(53, 13);
+            this.linkProfile.TabIndex = 8;
+            this.linkProfile.TabStop = true;
+            this.linkProfile.Text = "My Profile";
+            this.linkProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkProfile_LinkClicked);
             // 
             // lblRol
             // 
@@ -427,17 +439,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
-            // linkProfile
-            // 
-            this.linkProfile.AutoSize = true;
-            this.linkProfile.Location = new System.Drawing.Point(8, 63);
-            this.linkProfile.Name = "linkProfile";
-            this.linkProfile.Size = new System.Drawing.Size(53, 13);
-            this.linkProfile.TabIndex = 8;
-            this.linkProfile.TabStop = true;
-            this.linkProfile.Text = "My Profile";
-            this.linkProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkProfile_LinkClicked);
             // 
             // PantallaPrincipal
             // 
