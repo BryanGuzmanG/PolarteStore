@@ -118,5 +118,17 @@ namespace CAPAACCESOADATOS
             }
         }
 
+        public void Eliminar(int id)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand)
+                {
+
+                }
+            }
+        }
+
     }
 }
