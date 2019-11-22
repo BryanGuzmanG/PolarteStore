@@ -32,6 +32,7 @@ namespace PRESENTACION
         private void MostrarCategoria()
         {
             //DoProducto objPro = new DoProducto();
+
             cmbCategoria.DataSource = objPro.MostrarCategoria();
             cmbCategoria.DisplayMember = "Nombre";
             cmbCategoria.ValueMember = "CategoriaID";
@@ -42,13 +43,17 @@ namespace PRESENTACION
         private void MostrarSuplidores()
         {
             //DoProducto objPro = new DoProducto();
-            cmbSuplidor.DataSource = objPro.MostrarSuplidores();
+            DoSuplidores objSupli = new DoSuplidores();
+
+            cmbSuplidor.DataSource = objSupli.MostrarSuplidores();
             cmbSuplidor.DisplayMember = "NombreSuplidor";
             cmbSuplidor.ValueMember = "SuplidorID";
+           
         }
 
         private void FrmProducto_Load(object sender, EventArgs e)
         {
+           
             MostrarProducto();
             MostrarCategoria();
             MostrarSuplidores();
@@ -65,6 +70,7 @@ namespace PRESENTACION
                 reset();
 
                 MessageBox.Show("Se inserto correctamente");
+                deshabilitar();
             }
             else if(operacion == "Edit")
             {
@@ -73,6 +79,7 @@ namespace PRESENTACION
                 MostrarProducto();
                 MessageBox.Show("Se edito correctamente");
                 reset();
+                deshabilitar();
                 operacion = "Insert";
             }
 
@@ -83,13 +90,9 @@ namespace PRESENTACION
             if(dataGridViewProducto.SelectedRows.Count > 0)
             {
                 operacion = "Edit";
-                cmbCategoria.Text = dataGridViewProducto.CurrentRow.Cells[3].Value.ToString();
-                cmbSuplidor.Text = dataGridViewProducto.CurrentRow.Cells[6].Value.ToString();
-                txtNombrePro.Text = dataGridViewProducto.CurrentRow.Cells[2].Value.ToString();
-                txtCodigoPro.Text = dataGridViewProducto.CurrentRow.Cells[1].Value.ToString();
-                txtPrecio.Text = dataGridViewProducto.CurrentRow.Cells[4].Value.ToString();
-                txtStock.Text = dataGridViewProducto.CurrentRow.Cells[5].Value.ToString();
-                idPro = dataGridViewProducto.CurrentRow.Cells[0].Value.ToString();
+                llenarInfo();
+                Habilitar();
+
             }else
                 MessageBox.Show("debe seleccionar una fila");
         }
@@ -101,6 +104,32 @@ namespace PRESENTACION
             txtNombrePro.Text = "";
             txtPrecio.Text = "";
             txtStock.Text = "";
+            
+        }
+        private void Habilitar()
+        {
+            txtCodigoPro.Enabled = true;
+            txtNombrePro.Enabled = true;
+            txtPrecio.Enabled = true;
+            txtStock.Enabled = true;
+            cmbCategoria.Enabled = true;
+            cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbSuplidor.Enabled = true;
+            cmbSuplidor.DropDownStyle = ComboBoxStyle.DropDownList;
+            btnSaver.Enabled = true;
+            btnCancel.Enabled = true;
+        }
+
+        private void deshabilitar()
+        {
+            txtCodigoPro.Enabled = false;
+            txtNombrePro.Enabled = false;
+            txtPrecio.Enabled = false;
+            txtStock.Enabled = false;
+            cmbCategoria.Enabled = false;
+            cmbSuplidor.Enabled = false;
+            btnSaver.Enabled = false;
+            btnCancel.Enabled = false;
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
@@ -115,6 +144,43 @@ namespace PRESENTACION
             }else
                 MessageBox.Show("seleccione una fila por favor");
 
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            Habilitar();
+            txtCodigoPro.Focus();
+        }
+        
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            reset();
+            deshabilitar();
+        }
+
+        private void DataGridViewProducto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            llenarInfo();
+           
+        }
+
+
+        private void llenarInfo()
+        {
+            cmbCategoria.Text = dataGridViewProducto.CurrentRow.Cells[3].Value.ToString();
+            cmbSuplidor.Text = dataGridViewProducto.CurrentRow.Cells[6].Value.ToString();
+            txtNombrePro.Text = dataGridViewProducto.CurrentRow.Cells[2].Value.ToString();
+            txtCodigoPro.Text = dataGridViewProducto.CurrentRow.Cells[1].Value.ToString();
+            txtPrecio.Text = dataGridViewProducto.CurrentRow.Cells[4].Value.ToString();
+            txtStock.Text = dataGridViewProducto.CurrentRow.Cells[5].Value.ToString();
+            idPro = dataGridViewProducto.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to close this window?", "Warning",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
         }
     }
 }

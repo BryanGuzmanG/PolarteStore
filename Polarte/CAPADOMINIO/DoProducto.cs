@@ -20,13 +20,14 @@ namespace CAPADOMINIO
             return tabla;
 
         }
-
+        /*
         public DataTable MostrarSuplidores()
         {
             DataTable tabla = new DataTable();
             tabla = objProct.ListarSuplidores();
             return tabla;
         }
+        */
 
         public DataTable MostrarCategoria()
         {

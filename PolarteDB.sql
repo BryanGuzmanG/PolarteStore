@@ -18,7 +18,7 @@ select * from Users
 
 
 CREATE TABLE Productos(
-ProductoID int primary key identity,
+ProductoID int  identity(1,1) primary key,
 CodigoProducto varchar(10) NOT NULL unique,
 DescripcionProducto varchar(30)NOT NULL, 
 Existencia int NOT NULL,
@@ -27,22 +27,29 @@ SuplidorID int,
 CategoriaID int,
 );
 
+insert into Productos values ('T-BH','T-shirt blanco',50,350,1,1)
+Select * from Productos
+
 ALTER TABLE Productos ADD CONSTRAINT Fk_ProductSupli FOREIGN KEY (SuplidorID) REFERENCES Suplidores(SuplidorID)
 ALTER TABLE Productos ADD CONSTRAINT Fk_ProductCategoria FOREIGN KEY (CategoriaID) REFERENCES Categorias (CategoriaID)
 
 CREATE TABLE Categorias(
-CategoriaID int primary key,
+CategoriaID int  identity(1,1) primary key,
 Nombre varchar(25) NOT NULL,
-Descripcion varchar(50)
-)
+Descripcion varchar(50))
+
+insert into Categorias values ('T-shirt F', 'T-shirt tip franelas finas')
 
 CREATE TABLE Suplidores(
-SuplidorID int primary key,
+SuplidorID int  identity(1,1) primary key,
 CodigoSuplidor varchar(15) NOT NULL,
 NombreSuplidor varchar(50) NOT NULL,
 Telefono varchar(13),
 Direccion varchar(max)
 );
+
+insert into Suplidores values ('SU-ALMANZAR', 'Almanzar CXC','8298569586','No conzoco la direccion')
+select * from Suplidores
 
 CREATE TABLE Ordenes(
 OrdenID int primary key identity(1000,1),

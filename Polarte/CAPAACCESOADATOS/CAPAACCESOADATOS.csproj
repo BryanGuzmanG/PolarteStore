@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataProducto.cs" />
+    <Compile Include="DataSuplidores.cs" />
     <Compile Include="SQLConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDao.cs" />

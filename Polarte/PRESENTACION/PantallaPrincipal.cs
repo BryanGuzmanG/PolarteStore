@@ -72,7 +72,7 @@ namespace PRESENTACION
 
         private void BtnProveedores_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new frmProveedores());
+            AbrirFormularioEnPanel(new frmSuplidores());
             
         }
 
@@ -114,6 +114,13 @@ namespace PRESENTACION
             AbrirFormularioEnPanel(new frmUserProfile());
             //AbrirFormularioEnPanel<frmUserProfile>();
         }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+           // AbrirFormularioEnPanel(new FormP());
+        }
+
+
 
         /* private void AbrirFormulario<MiForm>() where MiForm : Form , new()
          {

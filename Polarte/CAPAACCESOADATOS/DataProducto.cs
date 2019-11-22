@@ -29,7 +29,7 @@ namespace CAPAACCESOADATOS
                 }
             }
         }
-        public DataTable ListarSuplidores()
+        /*public DataTable ListarSuplidores()
         {
             using (var connection = GetConnection())
             {
@@ -47,7 +47,7 @@ namespace CAPAACCESOADATOS
                 }
             }
             
-        }
+        }*/
         public DataTable ListarCategoria()
         {
             using (var connection = GetConnection())

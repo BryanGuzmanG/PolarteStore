@@ -30,7 +30,6 @@ C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\bin\Debug\PRESENTACION
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csprojAssemblyReference.cache
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmEmpleados.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProducto.resources
-C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProveedores.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmVentas.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.PantallaPrincipal.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.Properties.Resources.resources
@@ -70,3 +69,4 @@ C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.exe
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmSuplidores.resources
