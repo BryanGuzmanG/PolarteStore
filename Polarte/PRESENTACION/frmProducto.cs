@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CAPADOMINIO;
+using Common.Cache;
 
 namespace PRESENTACION
 {
@@ -57,6 +58,7 @@ namespace PRESENTACION
             MostrarProducto();
             MostrarCategoria();
             MostrarSuplidores();
+            Permisos();
         }
 
         private void BtnSaver_Click(object sender, EventArgs e)
@@ -110,8 +112,7 @@ namespace PRESENTACION
         {
             txtCodigoPro.Enabled = true;
             txtNombrePro.Enabled = true;
-            txtPrecio.Enabled = true;
-            txtStock.Enabled = true;
+            
             cmbCategoria.Enabled = true;
             cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbSuplidor.Enabled = true;
@@ -150,6 +151,8 @@ namespace PRESENTACION
         {
             Habilitar();
             txtCodigoPro.Focus();
+            txtPrecio.Enabled = true;
+            txtStock.Enabled = true;
         }
         
         private void BtnCancel_Click(object sender, EventArgs e)
@@ -161,6 +164,8 @@ namespace PRESENTACION
         private void DataGridViewProducto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             llenarInfo();
+            txtPrecio.Enabled = false;
+            txtStock.Enabled = false;
            
         }
 
@@ -181,6 +186,25 @@ namespace PRESENTACION
             if (MessageBox.Show("Are you sure you want to close this window?", "Warning",
                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
+        }
+
+        private void Permisos()
+        {
+            if (UserCache.Rol == Roles.Administrador || UserCache.Rol == Roles.Gerente)
+            {
+                btnAdd.Enabled = true;
+                btnEditar.Enabled = true;
+                btnEditar.Enabled = true;
+                txtPrecio.Enabled = true;
+                txtStock.Enabled = true;
+
+            }
+            else if (UserCache.Rol == Roles.Vendedor)
+            {
+                btnEliminar.Enabled = false;
+                txtPrecio.Enabled = false;
+                txtStock.Enabled = false;
+            }
         }
     }
 }

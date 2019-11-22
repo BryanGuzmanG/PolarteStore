@@ -19,7 +19,7 @@ namespace CAPAACCESOADATOS
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update Users set UserName=@userName, Password=@pass, Nombre=@name, Apellidos=@lastName, Email=@mail where UserID=@id";
+                    command.CommandText = "update Users set UserName=@userName, Password=@pass, Nombre=@name, Apellidos=@lastName, Email=@mail where UserID = @id";
                     command.Parameters.AddWithValue("@userName", userName);
                     command.Parameters.AddWithValue("@pass", password);
                     command.Parameters.AddWithValue("@name", name);

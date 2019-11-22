@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CAPADOMINIO;
+using Common.Cache;
 
 namespace PRESENTACION
 {
@@ -25,6 +26,7 @@ namespace PRESENTACION
         private void FrmSuplidores_Load(object sender, EventArgs e)
         {
             MostrarSuplidores();
+            Permisos();
         }
 
         private void MostrarSuplidores()
@@ -144,5 +146,22 @@ namespace PRESENTACION
                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void Permisos()
+        {
+            if (UserCache.Rol == Roles.Administrador || UserCache.Rol == Roles.Gerente)
+            {
+                btnAdd.Enabled = true;
+                btnEditar.Enabled = true;
+                btnEditar.Enabled = true;
+
+
+            }
+            else if (UserCache.Rol == Roles.Vendedor)
+            {
+                btnEditar.Enabled = false;
+            }
+        }
+
     }
 }

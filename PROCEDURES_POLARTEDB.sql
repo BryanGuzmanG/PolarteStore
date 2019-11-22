@@ -12,7 +12,6 @@ inner join Categorias as c on c.CategoriaID = p.CategoriaID
 inner join Suplidores as s on s.SuplidorID = p.SuplidorID
 GO
 
-
 /** PROCEDURE DE EDITAR PRODUCTO */
 
 CREATE PROCEDURE [dbo].[spc_EditarProducts]
@@ -72,3 +71,55 @@ go
 Update Suplidores set CodigoSuplidor = 'AS-BREA',NombreSuplidor = 'Bernado & Asoc',
 Telefono = '8498597565', Direccion ='Los Rios #40'
 where SuplidorID = 2
+
+
+CREATE PROCEDURE spc_EditarUsuario
+@userName varchar(30),
+@pass varchar(15),
+@name varchar(25),
+@lastName varchar(45),
+@mail varchar(150),
+@id int
+as
+update Users set UserName=@userName, Password=@pass, Nombre=@name, Apellidos=@lastName, Email=@mail
+ where UserID=@id
+ go
+
+
+ /*PROCEDURE  DE INSERTAR USUARIO*/
+ CREATE PROCEDURE spc_InsertarUsuario
+ @Username varchar(30),
+ @Password varchar(15),
+ @Nombre varchar(25),
+ @Apellidos varchar(45),
+ @Rol varchar(50),
+ @Email varchar(150)
+ as
+insert into Users values (@Username,@Password,@Nombre,@Apellidos,@Rol,@Email)
+go
+
+exec spc_InsertarUsuario 'Bryan', 'Bryan', 'Bryan', 'Guzman','Administrador','BryanG@Gmail.com'
+
+select * from Users
+
+use PolarteDB
+ Select * from Users
+
+Select UserName, Nombre , Apellidos , Rol , Email from Users
+
+
+ /*PROCEDURE  DE Editar USUARIO*/
+ CREATE PROCEDURE spc_EditarEmpleado
+ @UserID int,
+ @Username varchar(30),
+ @Password varchar(15),
+ @Nombre varchar(25),
+ @Apellidos varchar(45),
+ @Rol varchar(50),
+ @Email varchar(150)
+ as
+ update Users set UserName = @Username, Password = @Password, Nombre = @Nombre, 
+ Apellidos = @Apellidos, Rol = @Rol , Email = @Email Where UserID = @UserID;
+
+ update Users set UserName = 'BryanG', Password = '12345', Nombre = 'Bryan', 
+ Apellidos = 'Guzman', Rol = 'Administrador' , Email = 'Bryan@Gmail.com' Where UserID = 2;
