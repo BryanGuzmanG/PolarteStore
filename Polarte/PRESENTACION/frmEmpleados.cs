@@ -111,5 +111,16 @@ namespace PRESENTACION
 
             deshabilitar();
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddEmpleado objAddEmpleado = new frmAddEmpleado();
+            objAddEmpleado.Show();
+            objAddEmpleado.TopLevel = true;
+            objAddEmpleado.BringToFront();
+            this.Hide();
+
+        }
+     
     }
 }

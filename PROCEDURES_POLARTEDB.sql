@@ -121,5 +121,5 @@ Select UserName, Nombre , Apellidos , Rol , Email from Users
  update Users set UserName = @Username, Password = @Password, Nombre = @Nombre, 
  Apellidos = @Apellidos, Rol = @Rol , Email = @Email Where UserID = @UserID;
 
- update Users set UserName = 'BryanG', Password = '12345', Nombre = 'Bryan', 
+ update Users set UserName = 'BryanG', Password = 'Bryan', Nombre = 'Bryan', 
  Apellidos = 'Guzman', Rol = 'Administrador' , Email = 'Bryan@Gmail.com' Where UserID = 2;

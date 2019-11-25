@@ -124,7 +124,9 @@ namespace PRESENTACION
       
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Are you sure you want to close this window?", "Warning",
+                  MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
         }
     }
 }

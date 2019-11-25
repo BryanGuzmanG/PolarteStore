@@ -30,9 +30,32 @@ namespace CAPADOMINIO
             Rol = rol;
             Email = email;
         }
+        public UserModel(string userName, string password, string nombre, string apellidos, string rol, string email)
+        {
+            //UserID = userID;
+            UserName = userName;
+            Password = password;
+            Nombre = nombre;
+            Apellidos = apellidos;
+            Rol = rol;
+            Email = email;
+        }
 
         public UserModel() { }
         //Methods
+
+        public string AddUser()
+        {
+            try
+            {
+                userDao.AddUsuer(UserName, Password, Nombre, Apellidos, Rol, Email);
+                return "This Employee has been successfully added";
+            }
+            catch
+            {
+                return "Something wrong happened try again!";
+            }
+        }
         public string EditProfile()
         {
             try
@@ -41,7 +64,7 @@ namespace CAPADOMINIO
                 LoginUser(UserName, Password);
                 return "Your profile has been successfully updated";
             }
-            catch (Exception ex)
+            catch 
             {
                 return "Username is already registered, try another";
             }

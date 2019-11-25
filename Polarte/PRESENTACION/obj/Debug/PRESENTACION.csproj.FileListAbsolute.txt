@@ -70,3 +70,4 @@ C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.exe
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmSuplidores.resources
+C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmAddEmpleado.resources

@@ -17,6 +17,7 @@ namespace PRESENTACION
         public frmLogin()
         {
             InitializeComponent();
+            btnVer.Text = "-";
         }
 
         private void TxtUser_Enter(object sender, EventArgs e)
@@ -110,6 +111,21 @@ namespace PRESENTACION
             txtPass.UseSystemPasswordChar = false;
             lblErrorMessage.Visible = false;
             this.Show();
+        }
+
+        private void BtnVer_Click(object sender, EventArgs e)
+        {
+            if (btnVer.Text == "-")
+            {
+               
+                txtPass.UseSystemPasswordChar = true;
+                 btnVer.Text = "";
+
+            }
+            else if (btnVer.Text == "")
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
         }
     }
 }

@@ -11,6 +11,28 @@ namespace CAPAACCESOADATOS
 {
     public class UserDao : SQLConexion
     {
+        public  void AddUsuer(string userName, string password, string name, string lastName, string  Rol, string email)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "spc_InsertarUsuario";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@UserName", userName);
+                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@Nombre", name);
+                    command.Parameters.AddWithValue("@Apellidos", lastName);
+                    command.Parameters.AddWithValue("@Rol", Rol);
+                    command.Parameters.AddWithValue("@Email", email);
+
+                    command.ExecuteNonQuery();
+                    
+                }
+            }
+        }
         public void editProfile(int id, string userName, string password, string name, string lastName, string mail)
         {
             using (var connection = GetConnection())

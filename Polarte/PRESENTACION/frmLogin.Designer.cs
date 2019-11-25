@@ -41,6 +41,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.lblErrorMessage = new System.Windows.Forms.Label();
+            this.btnVer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -95,7 +96,7 @@
             this.txtPass.ForeColor = System.Drawing.Color.DimGray;
             this.txtPass.Location = new System.Drawing.Point(315, 159);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(424, 19);
+            this.txtPass.Size = new System.Drawing.Size(390, 19);
             this.txtPass.TabIndex = 2;
             this.txtPass.Text = "PASSWORD";
             this.txtPass.Enter += new System.EventHandler(this.TxtPass_Enter);
@@ -189,12 +190,24 @@
             this.lblErrorMessage.Text = "Error Message";
             this.lblErrorMessage.Visible = false;
             // 
+            // btnVer
+            // 
+            this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVer.Image = ((System.Drawing.Image)(resources.GetObject("btnVer.Image")));
+            this.btnVer.Location = new System.Drawing.Point(710, 150);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(28, 23);
+            this.btnVer.TabIndex = 11;
+            this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.BtnVer_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.btnVer);
             this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -236,6 +249,7 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Label lblErrorMessage;
+        private System.Windows.Forms.Button btnVer;
     }
 }
 
