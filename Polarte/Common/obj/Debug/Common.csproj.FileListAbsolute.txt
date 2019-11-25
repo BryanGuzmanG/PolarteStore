@@ -4,3 +4,9 @@ C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.csprojAssem
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.dll
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\Common\obj\Debug\Common.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\bin\Debug\Common.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\bin\Debug\Common.pdb
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\obj\Debug\Common.dll
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\Common\obj\Debug\Common.pdb

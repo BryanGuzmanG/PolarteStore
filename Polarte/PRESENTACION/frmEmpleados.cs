@@ -33,7 +33,11 @@ namespace PRESENTACION
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
+            PantallaPrincipal obj = new PantallaPrincipal();
             this.Close();
+            obj.Show();
+            
+
         }
 
         private void LlenarInfo()

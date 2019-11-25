@@ -59,7 +59,6 @@ C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmEmpleados.resources
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmLogin.resources
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProducto.resources
-C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmProveedores.resources
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmUserProfile.resources
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmVentas.resources
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.PantallaPrincipal.resources
@@ -71,3 +70,5 @@ C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION
 C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.pdb
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmSuplidores.resources
 C:\ASP.Net\PolarteStore\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmAddEmpleado.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmAddEmpleado.resources
+C:\Users\Darli\OneDrive\Documentos\C# Proyecto\PolarteStore\Polarte\PRESENTACION\obj\Debug\PRESENTACION.frmSuplidores.resources
