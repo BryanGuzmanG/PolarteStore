@@ -17,8 +17,8 @@ namespace PRESENTACION
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-             //Application.Run(new frmLogin());
-             Application.Run(new frmVentas());
+            Application.Run(new frmLogin());
+            //Application.Run(new frmVentas());
             //Application.Run(new frmProducto());  
             //Application.Run(new frmProducto());
         }

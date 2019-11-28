@@ -60,7 +60,6 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
             this.dataGridViewDetalle = new System.Windows.Forms.DataGridView();
@@ -69,7 +68,6 @@
             this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnIniciarOrden = new System.Windows.Forms.Button();
             this.dataGridViewOrden = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -263,19 +261,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Detalle";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(670, 484);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 28);
-            this.btnCancelar.TabIndex = 11;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
             // btnHome
             // 
             this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
@@ -428,20 +413,6 @@
             this.TOTAL.Name = "TOTAL";
             this.TOTAL.ReadOnly = true;
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(769, 484);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 28);
-            this.btnGuardar.TabIndex = 21;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
             // btnIniciarOrden
             // 
             this.btnIniciarOrden.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -515,11 +486,9 @@
             this.ClientSize = new System.Drawing.Size(877, 551);
             this.Controls.Add(this.dataGridViewOrden);
             this.Controls.Add(this.btnIniciarOrden);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dataGridViewDetalle);
             this.Controls.Add(this.dataGridViewProducto);
             this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.txtCantidad);
@@ -555,7 +524,6 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtCambio;
         private System.Windows.Forms.TextBox txtImporte;
         private System.Windows.Forms.TextBox txtTotal;
@@ -574,7 +542,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOTAL;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnIniciarOrden;
         private System.Windows.Forms.DataGridView dataGridViewOrden;
     }

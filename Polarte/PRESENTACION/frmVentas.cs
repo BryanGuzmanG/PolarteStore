@@ -31,6 +31,7 @@ namespace PRESENTACION
         private void FrmVentas_Load(object sender, EventArgs e)
         {
             MostrarProducto();
+            dataGridViewProducto.Enabled = false;
         }
 
         private void MostrarProducto()
@@ -211,6 +212,7 @@ namespace PRESENTACION
         private void BtnIniciarOrden_Click(object sender, EventArgs e)
         {
             objVentas.InsertarOrden(UserCache.Nombre, DateTime.Now.Date);
+            dataGridViewProducto.Enabled = true;
         }
     }
 }
