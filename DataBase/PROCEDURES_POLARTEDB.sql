@@ -135,3 +135,15 @@ Select UserName, Nombre , Apellidos , Rol , Email from Users
 
  exec psc_InsertarOrden 1 , '2/12/2019'
  select * from Ordenes
+
+ --
+
+ CREATE PROCEDURE psc_InsertaOrdenDetalle
+ @OrdenID int,
+ @ProductoID int,
+ @Precio Money,
+ @Cantidad int,
+ @SubTotal money,
+ @ITBIS money
+ as
+ insert into OrdenDetalle Values(@OrdenID, @ProductoID, @Precio, @Cantidad, @SubTotal, @ITBIS)
