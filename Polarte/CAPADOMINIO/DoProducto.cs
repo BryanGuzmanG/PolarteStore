@@ -57,5 +57,10 @@ namespace CAPADOMINIO
             objProct.EliminarProd(Convert.ToInt32(id));
         }
 
+        public void EditarStock(string id , string stock)
+        {
+            objProct.EditarStock(Convert.ToInt32(id), Convert.ToInt32(stock));
+        }
+
     }
 }

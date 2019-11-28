@@ -120,6 +120,11 @@ namespace PRESENTACION
            // AbrirFormularioEnPanel(new FormP());
         }
 
+        private void PanelFormularios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
         /* private void AbrirFormulario<MiForm>() where MiForm : Form , new()

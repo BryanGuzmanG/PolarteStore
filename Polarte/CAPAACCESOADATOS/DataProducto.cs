@@ -118,6 +118,25 @@ namespace CAPAACCESOADATOS
             }
         }
 
+        public void EditarStock(int id , int stock)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "update Productos set Existencia = @stock where ProductoID = @id";
+                    command.CommandType = CommandType.Text;
+                    command.Parameters.AddWithValue("@stock", stock);
+                    command.Parameters.AddWithValue("@id", id);
+
+                    command.ExecuteNonQuery();
+                    command.Parameters.Clear();
+                }
+            }
+        }
+
         public void EliminarProd(int id)
         {
             using (var connection = GetConnection())

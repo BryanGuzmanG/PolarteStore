@@ -13,7 +13,7 @@ namespace CAPAACCESOADATOS
 
         public SQLConexion()
         {
-            conexionString = "Server = DESKTOP-1AHN8HK\\SQLEXPRESS; DataBase = PolarteDB; integrated security = true";
+            conexionString = "Server =DESKTOP-IEIS5SM; DataBase = PolarteDB; integrated security = true";
         }
 
         protected SqlConnection GetConnection()

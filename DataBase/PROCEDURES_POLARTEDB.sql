@@ -123,3 +123,15 @@ Select UserName, Nombre , Apellidos , Rol , Email from Users
 
  update Users set UserName = 'BryanG', Password = 'Bryan', Nombre = 'Bryan', 
  Apellidos = 'Guzman', Rol = 'Administrador' , Email = 'Bryan@Gmail.com' Where UserID = 2;
+
+
+ --
+
+ CREATE PROCEDURE psc_InsertarOrden
+ @UsuarioID int,
+ @FechaOrden datetime 
+ as
+ insert into Ordenes values(@UsuarioID, @FechaOrden);
+
+ exec psc_InsertarOrden 1 , '2/12/2019'
+ select * from Ordenes

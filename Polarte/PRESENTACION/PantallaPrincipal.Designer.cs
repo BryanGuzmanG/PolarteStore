@@ -98,6 +98,7 @@
             this.panelFormularios.Name = "panelFormularios";
             this.panelFormularios.Size = new System.Drawing.Size(864, 523);
             this.panelFormularios.TabIndex = 2;
+            this.panelFormularios.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFormularios_Paint);
             // 
             // label1
             // 
