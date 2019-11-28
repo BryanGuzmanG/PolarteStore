@@ -211,7 +211,8 @@ namespace PRESENTACION
 
         private void BtnIniciarOrden_Click(object sender, EventArgs e)
         {
-            objVentas.InsertarOrden(UserCache.Nombre, DateTime.Now.Date);
+            //objVentas.InsertarOrden(UserCache.Nombre, DateTime.Now.Date);
+            objVentas.InsertarOrden(Convert.ToString(UserCache.UserID) , DateTime.Now);
             dataGridViewProducto.Enabled = true;
         }
     }

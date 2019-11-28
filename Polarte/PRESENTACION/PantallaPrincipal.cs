@@ -171,13 +171,13 @@ namespace PRESENTACION
             if (UserCache.Rol == Roles.Administrador || UserCache.Rol == Roles.Gerente)
             {
                 btnEmpleados.Enabled = true;
-                btnReportes.Enabled = true;
+                //btnReportes.Enabled = true;
 
 
             }else if(UserCache.Rol == Roles.Vendedor)
             {
                 btnEmpleados.Enabled = false;
-                btnReportes.Enabled = false;
+                //btnReportes.Enabled = false;
             }
             
         }
